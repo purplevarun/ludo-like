@@ -1,0 +1,39 @@
+body{
+	background-image: url(backgound.jpg);
+}
+#game-box{
+	background-color: white;
+	width:800;
+	height:450;
+	margin-left:280;
+	margin-top: 100;
+	position: relative;
+	border-radius: 5%;
+}
+.box1{
+	float:left;
+	background-color: red;
+	width:390;
+	height:450;
+	border: solid 5px black;
+	border-top-left-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+.box2{
+	float:left;
+	background-color: blue;
+	width:390;
+	height:450;
+	border: solid 5px black;
+	border-top-right-radius: 5%;
+	border-bottom-right-radius: 5%;
+}
+#new-game{
+	margin-top: 20;
+	margin-left: -450;
+	background-color: white;
+	border: none;
+	font-size: 20;
+	font-family: cursive;
+	border-style: groove;
+}
