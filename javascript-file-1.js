@@ -17,6 +17,6 @@ document.getElementById('new-game').addEventListener('click',function(){
 	var rollbtn = document.getElementById('roll');
 	rollbtn.onclick=function(){
 		var value = Math.floor(Math.random()*6)+1;
-		alert(value);
+		document.getElementById('dice-img').src='game-images/dice-'+value+'.png';
 	}
 });
