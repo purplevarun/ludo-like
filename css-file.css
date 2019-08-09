@@ -51,18 +51,26 @@ body{
 	margin-left: -170;
 	position: absolute;
 }
-#dice-pic{
+#dice-pic1{
 	width: 130;
 	height:130;
-	margin-left: 340;
-	margin-top: 130;
-	background-color: white;
+	margin-left: 110;
+	margin-top: 150;
+	background-color:white;
+	position: absolute;
+}
+#dice-pic2{
+	width: 130;
+	height:130;
+	margin-left: 530;
+	margin-top: 150;
+	background-color:white;
 	position: absolute;
 }
 #roll{
-	margin-top: 350;
-	margin-left: -160;
-	background-color: white;
+	margin-top: 300;
+	margin-left: 300;
+	background-color:beige;
 	border: none;
 	font-size: 40;
 	font-family:'Special Elite', cursive;
