@@ -10,23 +10,21 @@ body{
 	position: relative;
 	border-radius: 5%;
 }
-.box1{
-	float:left;
+#box1{
 	background-color: red;
-	width:390;
-	height:450;
-	border: solid 5px black;
 	border-top-left-radius: 5%;
 	border-bottom-left-radius: 5%;
 }
-.box2{
-	float:left;
+#box2{
 	background-color: blue;
+	border-top-right-radius: 5%;
+	border-bottom-right-radius: 5%;
+}
+.box-0{
+	float:left;
 	width:390;
 	height:450;
 	border: solid 5px black;
-	border-top-right-radius: 5%;
-	border-bottom-right-radius: 5%;
 }
 #new-game{
 	margin-top: 20;
@@ -36,4 +34,19 @@ body{
 	font-size: 20;
 	font-family: cursive;
 	border-style: groove;
+}
+.score-tag{
+	font-family:monospace;
+	font-size: 35;
+	margin-left: 90;
+}
+.score-value{
+	font-size: 100;
+	width: 200;
+	height: 200;
+	font-family: monospace;
+	/*background-color: chartreuse;*/
+	margin-top: 70;
+	margin-left: -170;
+	position: absolute;
 }

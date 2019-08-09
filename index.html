@@ -1,14 +1,21 @@
 <html>
     <head>
         <title>Game by Varun Kedia.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css-file.css">
 		<link rel="icon" href="favicon.jpg">
     </head>
     <body>
 		<audio id="gaana" src="badguy.mp3"></audio>
         <div id='game-box'>
-			<div class="box1"></div>
-			<div class="box2"></div>
+			<div id="box1" class="box-0">
+				<span class="score-tag">Your Score</span>
+				<span id="score-0" class="score-value">10</span>
+			</div>
+			<div id="box2" class="box-0">
+				<span class="score-tag">Rival Score</span>
+				<span id="score-1" class="score-value">20</span>
+			</div>
 			<button id="new-game">New Game</button>
 		</div>
     </body>
