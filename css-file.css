@@ -1,5 +1,6 @@
 body{
 	background-image: url(backgound.jpg);
+	background-repeat: no-repeat;
 }
 #game-box{
 	background-color: white;
@@ -49,4 +50,23 @@ body{
 	margin-top: 70;
 	margin-left: -170;
 	position: absolute;
+}
+#dice-pic{
+	width: 130;
+	height:130;
+	margin-left: 340;
+	margin-top: 130;
+	background-color: white;
+	position: absolute;
+}
+#roll{
+	margin-top: 350;
+	margin-left: -180;
+	background-color: white;
+	border: none;
+	font-size: 40;
+	font-family:'Special Elite', cursive;
+	border-style:solid;
+	position:fixed;
+	padding-top: 10;
 }
