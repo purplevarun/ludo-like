@@ -51,7 +51,7 @@ document.getElementById('new-game').addEventListener('click',function(){
 				else if(rival_score>user_score){
 					rival_won();
 				}
-				else{
+				else if(rival_score>=40){
 						draw();
 				}
 			}	
@@ -69,7 +69,7 @@ document.getElementById('new-game').addEventListener('click',function(){
 				else if(user_score>rival_score){
 					user_won();
 				}
-				else{
+				else if(user_score>=40){
 					draw();	
 				}
 			}	
