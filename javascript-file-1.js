@@ -50,10 +50,14 @@ document.getElementById('new-game').addEventListener('click',function(){
 					document.getElementById('score-0').textContent='YOU WON';
 					endGame();
 				}
-				else{
+				else if(rival_score>user_score){
 					document.getElementById('score-1').style.fontSize='30px';
 					document.getElementById('score-1').textContent='RIVAL WON';
 					endGame();
+				}
+				else{
+					document.getElementById('score-0').textContent='MATCH DRAWN';
+					document.getElementById('score-1').textContent='MATCH DRAWN';
 				}
 			}	
 		};
@@ -69,10 +73,14 @@ document.getElementById('new-game').addEventListener('click',function(){
 					document.getElementById('score-1').textContent='RIVAL WON';
 					endGame();
 				}
-				else{
+				else if(user_score>rival_score){
 					document.getElementById('score-0').style.fontSize='30px';
 					document.getElementById('score-0').textContent='YOU WON';
 					endGame();
+				}
+				else{
+					document.getElementById('score-0').textContent='MATCH DRAWN';
+					document.getElementById('score-1').textContent='MATCH DRAWN';	
 				}
 			}	
 		};
