@@ -1,6 +1,6 @@
 body{
 	background-image: url(backgound.jpg);
-	background-repeat: no-repeat;
+	background-repeat:repeat-y;
 }
 #game-box{
 	background-color: white;
