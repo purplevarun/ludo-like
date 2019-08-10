@@ -46,18 +46,13 @@ document.getElementById('new-game').addEventListener('click',function(){
 			document.getElementById('score-0').innerHTML=user_score;
 			if(user_score>=40){
 				if(user_score>rival_score){
-					document.getElementById('score-0').style.fontSize='30px';
-					document.getElementById('score-0').textContent='YOU WON';
-					endGame();
+					user_won();
 				}
 				else if(rival_score>user_score){
-					document.getElementById('score-1').style.fontSize='30px';
-					document.getElementById('score-1').textContent='RIVAL WON';
-					endGame();
+					rival_won();
 				}
 				else{
-					document.getElementById('score-0').textContent='MATCH DRAWN';
-					document.getElementById('score-1').textContent='MATCH DRAWN';
+						draw();
 				}
 			}	
 		};
@@ -69,24 +64,33 @@ document.getElementById('new-game').addEventListener('click',function(){
 			document.getElementById('score-1').innerHTML=rival_score;
 			if(rival_score>=40){
 				if(rival_score>user_score){
-					document.getElementById('score-1').style.fontSize='30px';
-					document.getElementById('score-1').textContent='RIVAL WON';
-					endGame();
+					rival_won();	
 				}
 				else if(user_score>rival_score){
-					document.getElementById('score-0').style.fontSize='30px';
-					document.getElementById('score-0').textContent='YOU WON';
-					endGame();
+					user_won();
 				}
 				else{
-					document.getElementById('score-0').textContent='MATCH DRAWN';
-					document.getElementById('score-1').textContent='MATCH DRAWN';	
+					draw();	
 				}
 			}	
 		};
 		function endGame(){
 			document.getElementById('roll').style.display='none';
 			document.getElementById('gaana').pause();
-		}
+		};
+		function user_won(){
+			document.getElementById('score-0').style.fontSize='30px';
+			document.getElementById('score-0').textContent='YOU WON';
+			endGame();
+		};
+		function rival_won(){
+			document.getElementById('score-1').style.fontSize='30px';
+			document.getElementById('score-1').textContent='RIVAL WON';
+			endGame();
+		};
+		function draw(){
+			document.getElementById('score-0').textContent='MATCH DRAWN';
+			document.getElementById('score-1').textContent='MATCH DRAWN';	
+		};
 	}
 });
